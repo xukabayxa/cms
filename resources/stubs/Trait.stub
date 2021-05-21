@@ -1,0 +1,28 @@
+<?php
+
+namespace Modules\{{moduleName}}\Entities\Traits;
+
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
+
+use Modules\{{moduleName}}\Entities\{{moduleName}};
+
+/**
+ * Trait {{moduleName}}
+ * @package Modules\{{moduleName}}\Entities\{{moduleName}}
+ * @mixin Model
+ *
+ * Relations
+ */
+trait Has{{moduleName}}
+{
+    /**
+     * @return
+     */
+    public function {{moduleNameSingularLowerCase}}()
+    {
+
+    }
+}

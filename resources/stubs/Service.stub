@@ -1,0 +1,38 @@
+<?php
+
+namespace Modules\{{moduleName}}\Services;
+
+use Modules\{{moduleName}}\Entities\{{moduleName}};
+use Modules\{{moduleName}}\Repositories\{{moduleName}}Repository;
+
+/**
+ * Class {{moduleName}}Repository
+ * @package Modules\Platform\User\Repositories
+ */
+class {{moduleName}}Service
+{
+    protected $repository;
+
+    public function __construct({{moduleName}}Repository $repository)
+    {
+        $this->repository = $repository;
+    }
+
+    /**
+     * @param array $data
+     */
+    public function create($data)
+    {
+
+    }
+
+    /**
+     * @param {{moduleName}} $entity
+     * @param array $data
+     */
+    public function update($entity, $data)
+    {
+
+    }
+
+}

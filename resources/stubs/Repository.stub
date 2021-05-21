@@ -1,0 +1,19 @@
+<?php
+
+namespace Modules\{{moduleName}}\Repositories;
+
+use Modules\{{moduleName}}\Entities\{{moduleName}};
+use Prettus\Repository\Eloquent\BaseRepository;
+
+/**
+ * Class {{moduleName}}Repository
+ * @package Modules\Platform\User\Repositories
+ */
+class {{moduleName}}Repository extends BaseRepository
+{
+    public function model()
+    {
+        return {{moduleName}}::class;
+    }
+
+}

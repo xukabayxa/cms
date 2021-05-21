@@ -1,0 +1,13 @@
+{
+    "name": "SystemResource",
+    "alias": "systemresource",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SystemResource\\Providers\\SystemResourceServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

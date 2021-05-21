@@ -1,0 +1,18 @@
+<?php
+
+namespace Modules\{{moduleName}}\Http\Forms;
+
+use Kris\LaravelFormBuilder\Form;
+
+class {{moduleName}}Form extends Form
+{
+    public function buildForm()
+    {
+
+        $this->add('submit', 'submit', [
+            'label' => trans('core::core.form.save'),
+            'attr' => ['class' => 'btn btn-primary']
+        ]);
+    }
+
+}

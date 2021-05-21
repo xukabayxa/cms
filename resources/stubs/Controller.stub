@@ -1,0 +1,81 @@
+<?php
+
+namespace Modules\{{moduleName}}\Http\Controllers;
+
+use Modules\Core\Http\Controllers\ModuleCrudController;
+use Modules\{{moduleName}}\DataTables\{{moduleName}}Datatable;
+use Modules\{{moduleName}}\Http\Forms\{{moduleName}}Form;
+use Modules\{{moduleName}}\Http\Requests\{{moduleName}}StoreRequest;
+use Modules\{{moduleName}}\Http\Requests\{{moduleName}}UpdateRequest;
+use Modules\{{moduleName}}\Repositories\{{moduleName}}Repository;
+use Modules\{{moduleName}}\Services\{{moduleName}}Service;
+
+class {{moduleNamePlural}}Controller extends ModuleCrudController
+{
+    /**
+     * Permissions
+     * @var array
+     */
+    protected $permissions = [
+        'browse' => '{{moduleNamePluralLowerCase}}.browse',
+        'create' => '{{moduleNamePluralLowerCase}}.create',
+        'update' => '{{moduleNamePluralLowerCase}}.update',
+        'destroy' => '{{moduleNamePluralLowerCase}}.destroy'
+    ];
+    /**
+     * Path to language files
+     * @var
+     */
+    protected $languageFile = '{{moduleNamePluralLowerCase}}::{{moduleNameSingularLowerCase}}';
+
+    /**
+     * All routes
+     * @var array
+     */
+    protected $routes = [
+        'index' => '{{moduleNamePluralLowerCase}}.index',
+        'create' => '{{moduleNamePluralLowerCase}}.create',
+        'data' => '{{moduleNamePluralLowerCase}}.data',
+        'store' => '{{moduleNamePluralLowerCase}}.store',
+        'update' => '{{moduleNamePluralLowerCase}}.update',
+    ];
+
+    /**
+     * All breadcrumbs
+     * @var array
+     */
+    protected $breadcrumbs = [
+        'index' => '{{moduleNamePluralLowerCase}}',
+        'show' => '{{moduleNamePluralLowerCase}}.show',
+        'create' => '{{moduleNamePluralLowerCase}}.create',
+        'edit' => '{{moduleNamePluralLowerCase}}.edit',
+    ];
+
+    protected $routeName = '{{moduleNamePluralLowerCase}}';
+    protected $storeRequest = {{moduleName}}StoreRequest::class;
+    protected $updateRequest = {{moduleName}}UpdateRequest::class;
+    protected $formClass = {{moduleName}}Form::class;
+    protected $datatable = {{moduleName}}Datatable::class;
+
+    protected $showFields = [
+
+        'information' => [
+
+        ]
+    ];
+
+    protected ${{moduleNameSingularLowerCase}}Service;
+
+    /**
+     * {{moduleNamePlural}}Controller constructor.
+     *
+     * @param {{moduleName}}Repository $repository
+     * @throws \Exception
+     */
+    public function __construct({{moduleName}}Repository $repository, {{moduleName}}Service ${{moduleNameSingularLowerCase}}Service)
+    {
+        parent::__construct($repository);
+
+        $this->{{moduleNameSingularLowerCase}}Service = ${{moduleNameSingularLowerCase}}Service;
+    }
+}

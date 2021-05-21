@@ -1,0 +1,410 @@
+.truncate, .dz-filename {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.truncate-200{
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hidden {
+    display: none;
+}
+.block-avatar {
+    position: relative;
+}
+.status-active, .status-inactive {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.status-inactive {
+    background: #ccc;
+    border-color: #ccc;
+}
+
+.status-active {
+    background: #4caf50;
+    border-color: #4caf50;
+}
+.help-block-error {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: block;
+    color: #f44336;
+    position: relative;
+}
+.width-100px {
+    width: 100px;
+}
+.width-150px {
+    width: 150px;
+}
+.width-200px {
+    width: 200px;
+}
+
+/**
+   Dropzone
+ */
+.dz-selected {
+    border: 1px green solid !important;
+}
+.dropzone .dz-preview, .dropzone-previews .dz-preview {
+    cursor: pointer;
+    max-width: 200px;
+    min-width: inherit;
+}
+
+/*======*/
+#bank-accounts-tab .x_panel {
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    padding: 10px;
+}
+#gmap_canvas img {
+    max-width: none !important;
+    background: none !important
+}
+
+.google-map {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background: gray;
+}
+
+.customer-popover {
+    position: absolute;
+    /*width: 200px;*/
+    /*background: #fff;*/
+    border: 1px solid #42b983;
+    padding: 10px 20px;
+    box-shadow: 0 6px 6px rgba(16, 16, 16, 0.04), 0 6px 6px rgba(0, 0, 0, 0.05);
+    z-index:999;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+}
+.th-title {
+    padding-left: 54px;
+}
+@media only screen and (max-width: 720px) {
+    .th-title {
+        padding-left: 0;
+    }
+    .no-in-mobile {
+        display: none;
+    }
+    .id {
+        padding: .75rem 5px !important;
+    }
+}
+
+.contract-file {
+    position: relative;
+}
+.contract-file span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+
+.invoice-box {
+    max-width: 800px;
+    margin: auto;
+    font-size: 12px;
+    color: #555;
+}
+
+.invoice-box table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+
+.invoice-box table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.invoice-box table tr.top td:nth-child(2), .invoice-box table tr.information td:nth-child(2) {
+    text-align: right;
+}
+
+.invoice-box table tr.top td {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.invoice-box table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+
+.invoice-box table tr.information table td {
+    padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.invoice-box table tr.details td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.heading td, .invoice-box table tr.item td {
+    padding: 10px;
+    text-align: center;
+}
+
+.invoice-box table tr.item td {
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+    border-bottom: none;
+}
+
+.invoice-box table tr.total td:nth-child(2) {
+    border-top: 2px solid #eee;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .invoice-box table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .invoice-box table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+.min-w-110 {
+    min-width: 110px;
+}
+#app-configuration .nav-item > a.active{
+    font-weight: 700;
+}
+.tooltip-inner{
+    white-space: pre-wrap;
+}
+.dataTables_paginate  li{
+    display: inline-block;
+}
+.dataTables_paginate .paginate_button.current, .dataTables_paginate .paginate_button.current:focus, .dataTables_paginate .paginate_button.current:hover{
+    background-color: #2196f3;
+}
+.action_tree_fancy span{
+    pointer-events: none;
+    cursor: pointer;
+}
+.action_tree_fancy{
+    cursor: pointer;
+}
+
+.selectize-dropdown.templates {
+    min-height: 210px;
+    width: 200px !important;
+}
+.selectize-control.templates .selectize-dropdown-content > div {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 5px;
+}
+.selectize-control.templates .selectize-dropdown .name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.selectize-control.templates .selectize-dropdown .title {
+    display: block;
+}
+.selectize-control.templates .selectize-dropdown .description {
+    font-size: 12px;
+    display: block;
+    color: #a0a0a0;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.selectize-control.templates .icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 16px 16px;
+    margin: 0 3px 0 0;
+}
+.selectize-control.templates .selectize-dropdown .meta {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+.selectize-control.templates .selectize-dropdown .meta li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-right: 10px;
+}
+.selectize-control.templates .selectize-dropdown .meta li span {
+    font-weight: bold;
+}
+.bg-yellow {
+    background-color: yellow !important;
+    color: #333333 !important;
+}
+.selectize-input {
+    -webkit-box-sizing: inherit !important;
+    -moz-box-sizing: inherit !important;
+    box-sizing: inherit !important;
+    -webkit-box-shadow: inherit !important;
+    box-shadow: inherit !important;
+    -webkit-border-radius: inherit !important;
+    -moz-border-radius: inherit !important;
+    border-radius: inherit !important;
+
+    border-width: 1px 0;
+    border-top-color: transparent!important;
+    border-left-color: transparent!important;
+    border-right-color: transparent!important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.transactions td {
+    padding: .25rem .25rem;
+}
+.bg-revenue {
+    background-color: #0aa7ef;
+    color: #333333 !important;
+}
+
+.bg-expenditure {
+    background-color: #ffb052;
+    color: #333333 !important;
+}
+
+.bg-expenditure input, .bg-revenue input {
+    color: #333333 !important;
+}
+.border-bottom-none {
+    border: none !important;
+}
+#clone thead {
+    background: #fff;
+}
+#clone thead th {
+    border-collapse: collapse;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.google-map {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background: gray;
+}
+
+/*custom selectize products*/
+
+.selectize-control.products .selectize-dropdown-content > div {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 5px;
+}
+.selectize-control.products .selectize-dropdown .name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.selectize-control.products .selectize-dropdown .title {
+    display: block;
+}
+.selectize-control.products .selectize-dropdown .description {
+    font-size: 12px;
+    display: block;
+    color: #a0a0a0;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.selectize-control.products .icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 16px 16px;
+    margin: 0 3px 0 0;
+}
+.selectize-control.products .selectize-dropdown .meta {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+.selectize-control.products .selectize-dropdown .meta li {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+.selectize-control.products .selectize-dropdown .meta li span {
+    font-weight: bold;
+}
+
+.img_left {
+    width: 100px;
+    float: left;
+    position: relative;
+    min-height: 100px;
+}
+
+.img_left img {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content_right {
+    width: calc(100% - 100px);
+    float: left;
+    padding: 20px;
+}
+
+.btn-actions {
+    display: none;
+}
+
+.w-20px {
+    width: 20px;
+}
+.w-50px {
+    width: 50px;
+}
+.w-100px {
+    width: 100px;
+}
+
+.w-200px {
+    width: 200px;
+}
+
+#products-datatable-table td, #products-datatable-table th {
+    padding: .25rem .25rem;
+}

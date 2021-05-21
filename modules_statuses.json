@@ -1,0 +1,10 @@
+{
+    "Core": true,
+    "Categories": true,
+    "Test": true,
+    "Product": true,
+    "User": true,
+    "SystemResource": true,
+    "Post": true,
+    "Tag": true
+}
