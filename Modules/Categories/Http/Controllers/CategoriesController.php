@@ -24,7 +24,7 @@ use Modules\User\Entities\Helper\UserHelper;
 
 class CategoriesController extends ModuleCrudController
 {
-    // thang 1
+    // thang 2
     /**
      * Permissions
      * @var array
